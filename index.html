@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+  </head>
+  <body>
+    <h1>たいちの好きなたばこの銘柄は？</h1>
+    <button id="malboro">マルボロ</button>
+    <button id="hilite">ハイライト</button>
+    <button id="camel">キャメル</button>
+    <div id="answer">答え</div>
+    <script>
+      const answer = document.getElementById("answer");
+      //answer.textContent = "";
+      const MalboroButton = document.getElementById("malboro");
+      MalboroButton.onclick = function () {
+        answer.textContent = "不正解です。まずいです";
+      };
+      const HiliteButton = document.getElementById("hilite");
+      HiliteButton.onclick = function () {
+        answer.textContent = "不正解です。まずいです";
+      };
+      const CamelButton = document.getElementById("camel");
+      CamelButton.onclick = function () {
+        answer.textContent = "正解。美味しいです。";
+      };
+    </script>
+  </body>
+</html>
